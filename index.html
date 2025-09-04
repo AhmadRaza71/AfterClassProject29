@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body style="font-family: Arial, sans-serif; text-align: center; background-color: #f0f8ff; padding: 20px;">
+        <h2 style="color: #333;">JS Async/Await</h2>
+        <h1 id="result" style="color: #0056b3;"></h1>
+        <script>
+            async function product (a, b) {
+                let response = await (a * b);
+                display(response);
+            }
+            function display(some) {
+                document.getElementById("result").innerHTML = some;
+            }
+            product(75, 412);
+        </script>
+    </body>
+</html>
